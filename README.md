@@ -11,6 +11,8 @@ pip install -r requirements.txt
 cd quick_replies
 ```
 
+---
+
 ## Return Process
 
 ### 功能簡介
@@ -23,6 +25,32 @@ cd quick_replies
 
 ### 安裝與使用
 ```bash
+pip install -r requirements.txt
 cd return_process
 ```
 
+---
+
+## 商品描述優化 API
+
+### 功能簡介
+這是一個使用 FastAPI 開發的商品描述優化 API，透過串接 OpenAI ChatGPT API，將電商商品描述精煉成簡潔、重點突出的文字，適合用於節省 LLM token 並提升模型回應效率。
+
+### 功能說明
+1. **商品描述優化 API**
+   - 清洗冗長的商品描述，保留關鍵賣點。
+   - 精簡輸出，降低 token 使用量。
+
+2. **串接 OpenAI ChatGPT API**
+   - 自行設計 prompt，確保輸出品質。
+   - 支援錯誤處理與重試機制，提升穩定性。
+
+3. **進階優化**
+   - 節省 token 的設計。
+   - 降低 LLM 延遲，提高回應速度。
+
+### 安裝與使用
+```bash
+pip install -r requirements.txt
+cd optimized_description
+```
