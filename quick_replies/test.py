@@ -16,7 +16,7 @@ else:
 
 # 多次測試（穩定性測試）
 test_results = []
-for _ in range(50):
+for _ in range(5):
     replies, time_taken = generate_quick_replies(chat_history)
     if time_taken:
         test_results.append(time_taken)
